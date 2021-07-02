@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あなたのいいところ診断</title>
+    <link rel="stylesheet" href="assessment.css">
+</head>
+<body>
+    <h1>あなたのいいところは？</h1>
+    <p>診断したい名前を入れてください</p>
+    <input type="text" id="user-name" size="40" maxlength="20" />
+    <button id="assessment">診断する</button>
+    <!-- ★17. 1) HTML にdiv タグを挿入し、JavaScript 側で書き込んだ処理を反映させる -->
+    <div id="result-area"><!-- 診断結果を表示するエリア--></div>
+    <div id="tweet-area"><p>練習問題のテスト</p><!-- ツイートボタンを表示するエリア-->
+    <!--
+        <a 
+          href="https://twitter.com/intent/tweet?button_hashtag=あなたのいいところ&ref_src=twsrc%5Etfw" 
+          class="twitter-hashtag-button" 
+          data-text="診断結果の文章" 
+          data-show-count="false">Tweet #あなたのいいところ
+        </a>
+        <script 
+          async 
+          src="https://platform.twitter.com/widgets.js" 
+          charset="utf-8">
+        </script>
+    -->
+    </div>
+    <script src="assessment.js"></script>
+
+    <p>Tips：input タグのtype 属性を変えてみよう<br>
+    ● text  にした場合の入力欄 <input type="text" class="text" /><br>
+    ● time  にした場合の入力欄 <input type="time" class="time" /><br>
+    ● color にした場合の入力欄 <input type="color" class="color" />
+    </p>
+</body>
+</html>
